@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <conio.h>
+
 int main()
 {
     int num, orgnum;
@@ -9,15 +9,14 @@ int main()
     orgnum=num;
     while (num>0) {
         rem=num%10;
-        sum+=rem;
         rev=rev*10+rem;
         num/=10;
     }
-    printf("\n sum of digits=%d",sum);
     printf("\n reversed number=%d",rev);
     if(orgnum==rev)
         printf("\n number is a palindrome");
     else
         printf("\n number is not a palindrome");
+    return 0;
 
 }
