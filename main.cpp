@@ -2,13 +2,17 @@
 using namespace std;
 int main()
 {
-    int age;
-    cout<<"enter your age: "<<"\n";
-    cin>>age;
-    if (age>=18) {
-        cout<<"you can vote"<<"\n";
+    int marks;
+    cout<<"enter the students marks: "<<"\n";
+    cin>>marks;
+    if (marks>=90) {
+        cout<<"A"<<"\n";
+    } else if (marks>=70){
+        cout<<"B"<<"\n";
+    } else if (marks>=50){
+        cout<<"c"<<"\n";
     } else {
-        cout<<"grow up kid"<<"\n";
+        cout<<"well whatever your grade is it's insignificant\n";
     }
     return 0;
 }
