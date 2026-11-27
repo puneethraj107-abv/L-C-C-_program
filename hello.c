@@ -1,13 +1,26 @@
 #include <stdio.h>
+
+// Function declaration
+int add(int a, int b);
+
+// Main function
 int main()
 {
-    int radius,area,circumference;
-    float PI=3.14;
-    printf("enter the radius of a circle ");
-    scanf("%d",&radius);
-    area=PI*radius*radius;
-    circumference=2*PI*radius;
-    printf("\n area of a circle is %d",area);
-    printf("\n circumference of  a circle is %d",circumference);
+    int result,c,d;
 
+    printf("C: ");
+    scanf("%d",&c);
+    printf("D: ");
+    scanf("%d",&d);
+    result = add(c, d);
+
+    printf("Sum = %d", result);
+
+    return 0;
+}
+
+// User-defined function
+int add(int a, int b)
+{
+    return a + b;
 }
